@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: 13ba06472c02f9d2e58b38107de55c9f692ede45
+    - imageTag: 35a55c2f620b03487e233f2f7f49f6054ca0029f
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -22,9 +22,9 @@ spec:
       imagePullPolicy: Always
       imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com
       commitDetails:
-        commitHash: 13ba06472c02f9d2e58b38107de55c9f692ede45
+        commitHash: 35a55c2f620b03487e233f2f7f49f6054ca0029f
         commitAvatar: https://github.com/iwiick.png
-        commitTime: 2023-12-07T13:15:08 05:30
+        commitTime: 2023-12-08T10:27:26 05:30
         commitMessage: '"Update README.md"'
         commitUser: iwiick
   minReplicas: 1
