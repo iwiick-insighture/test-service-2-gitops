@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: 86bbd70167782e06add61a1dba5b2275dffe6d87
+    - imageTag: 01676fe37710b5c9b874b65ddc84f534541546fa
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -22,9 +22,9 @@ spec:
       imagePullPolicy: Always
       imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com
       commitDetails:
-        commitHash: 86bbd70167782e06add61a1dba5b2275dffe6d87
+        commitHash: 01676fe37710b5c9b874b65ddc84f534541546fa
         commitAvatar: https://github.com/skyu-v2-dev[bot].png
-        commitTime: '2023-12-11T05:39:58Z'
+        commitTime: '2023-12-11T05:42:56Z'
         commitMessage: >-
           "web-app-default_env_860207ab-32d0-4ad2-8b78-e569ac242760_app_d42bb57b-ef7e-48b4-addb-f7600888bb4a
           workflow file created'"
