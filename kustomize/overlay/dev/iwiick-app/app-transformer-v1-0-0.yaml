@@ -20,7 +20,7 @@ spec:
       healthChecks: []
       name: iwiick-app-main
       imagePullPolicy: Always
-      imageRegistry: /
+      imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com/iwiick
       commitDetails:
         commitHash: 878e4f83db16329282371f5be359992456e3d1b0
         commitAvatar: https://github.com/skyu-v2-dev[bot].png
