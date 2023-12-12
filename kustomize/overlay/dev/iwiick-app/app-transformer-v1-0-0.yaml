@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: 1518c51bdaefacb22ed1baf7babec63d11f0864e
+    - imageTag: 202ad46b43aa2d5ea97a97770374165b7c009b3b
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -20,13 +20,15 @@ spec:
       healthChecks: []
       name: iwiick-app-main
       imagePullPolicy: Always
-      imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com/iwiick
+      imageRegistry: /
       commitDetails:
-        commitHash: 1518c51bdaefacb22ed1baf7babec63d11f0864e
-        commitAvatar: https://github.com/iwiick.png
-        commitTime: 2023-12-12T15:23:37 05:30
-        commitMessage: '"Update README.md"'
-        commitUser: iwiick
+        commitHash: 202ad46b43aa2d5ea97a97770374165b7c009b3b
+        commitAvatar: https://github.com/skyu-v2-dev[bot].png
+        commitTime: '2023-12-12T11:04:25Z'
+        commitMessage: >-
+          "web-app-default_env_860207ab-32d0-4ad2-8b78-e569ac242760_app_d42bb57b-ef7e-48b4-addb-f7600888bb4a
+          workflow file created'"
+        commitUser: skyu-v2-dev[bot]
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
