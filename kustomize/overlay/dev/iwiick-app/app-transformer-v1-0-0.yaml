@@ -20,7 +20,7 @@ spec:
       healthChecks: []
       name: iwiick-app-main
       imagePullPolicy: Always
-      imageRegistry: /
+      imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com/iwiick
       commitDetails:
         commitHash: 1518c51bdaefacb22ed1baf7babec63d11f0864e
         commitAvatar: https://github.com/iwiick.png
