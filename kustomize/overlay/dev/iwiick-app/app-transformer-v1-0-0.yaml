@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: 92686bd3cd3ee01ead4ff9df409e8a51d43ae29e
+    - imageTag: aa2300454a19c891ad5567883cbbad84a51e2fda
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -20,11 +20,11 @@ spec:
       healthChecks: []
       name: iwiick-app-main
       imagePullPolicy: Always
-      imageRegistry: /
+      imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com/iwiick
       commitDetails:
-        commitHash: 92686bd3cd3ee01ead4ff9df409e8a51d43ae29e
+        commitHash: aa2300454a19c891ad5567883cbbad84a51e2fda
         commitAvatar: https://github.com/skyu-v2-dev[bot].png
-        commitTime: '2023-12-15T10:30:20Z'
+        commitTime: '2023-12-15T10:29:22Z'
         commitMessage: >-
           "web-app-dev_env_860207ab-32d0-4ad2-8b78-e569ac242760_app_d42bb57b-ef7e-48b4-addb-f7600888bb4a
           workflow file created'"
