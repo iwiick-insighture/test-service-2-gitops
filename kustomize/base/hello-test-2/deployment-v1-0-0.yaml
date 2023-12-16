@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-test-2-v1-0-0
+  labels:
+    app: hello-test-2-v1-0-0
+    applicationId: app_7aba8e60-276b-406c-83d1-1f46742c3e92
+    version: v1.0.0
+    organizationId: org_fc18b32c-00a4-49d7-94ab-ee96b2c9569d
+    projectId: project_c14bdb9c-25f4-4dbc-9442-479bef640015
+spec:
+  selector:
+    matchLabels:
+      app: hello-test-2-v1-0-0
+  template:
+    metadata:
+      labels:
+        app: hello-test-2-v1-0-0
