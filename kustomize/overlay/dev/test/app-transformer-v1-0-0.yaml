@@ -1,0 +1,52 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts:
+        - port: 80
+          targetPort: 80
+          protocol: TCP
+          apiSpec:
+            gitPath: docs/swagger.json
+      healthChecks: []
+      name: test-main
+      imagePullPolicy: Always
+      imageRegistry: iwiickdock/iwiick/hello
+      imagePullSecretName: imagepull_docker
+      credentialId: credential_dbb9953b-9926-49df-aee3-b5129ba82b55
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: test
+    version: v1.0.0
+    applicationId: app_dffb7bcd-cfcf-440b-a86b-5296c57ba1e2
+    projectId: project_c14bdb9c-25f4-4dbc-9442-479bef640015
+    organizationId: org_fc18b32c-00a4-49d7-94ab-ee96b2c9569d
+    environmentId: env_860207ab-32d0-4ad2-8b78-e569ac242760
+    environmentName: dev
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: test
+  cronTab: ''
+  serviceType: ClusterIP
+  version: v1.0.0
+  namespace: iwiick-proj-dev
