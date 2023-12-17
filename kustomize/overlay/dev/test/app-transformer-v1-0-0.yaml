@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: 8152453b6d7f57ce0f0ae0b95fb4fb2ef153bc6d
+    - imageTag: b4a6b50906383c4b0f41ccf71ca9c76efdc9a54f
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -29,13 +29,13 @@ spec:
       imagePullSecretName: imagepull_docker
       credentialId: credential_dbb9953b-9926-49df-aee3-b5129ba82b55
       commitDetails:
-        commitHash: 8152453b6d7f57ce0f0ae0b95fb4fb2ef153bc6d
-        commitAvatar: https://github.com/skyu-v2-dev[bot].png
-        commitTime: '2023-12-17T04:22:48Z'
+        commitHash: b4a6b50906383c4b0f41ccf71ca9c76efdc9a54f
+        commitAvatar: https://github.com/nilesh93Insighture.png
+        commitTime: 2023-12-17T10:06:28 05:30
         commitMessage: >-
-          "container-staging_env_7014cabf-8c1e-4e8f-9f4f-f12520998408_app_e6b30fad-8e5c-4932-b658-337f9f95c907
-          workflow file created'"
-        commitUser: skyu-v2-dev[bot]
+          "Update
+          container-dev_env_cc895724-04a2-4c77-95bc-2c72eee17ff0_app_e6b30fad-8e5c-4932-b658-337f9f95c907.yaml"
+        commitUser: nilesh93Insighture
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
