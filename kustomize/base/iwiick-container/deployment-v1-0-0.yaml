@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iwiick-container-v1-0-0
+  labels:
+    app: iwiick-container-v1-0-0
+    applicationId: app_5c91deb6-9080-4b1d-a11d-133c808a4520
+    version: v1.0.0
+    organizationId: org_fc18b32c-00a4-49d7-94ab-ee96b2c9569d
+    projectId: project_a57a4ef7-6c27-42fe-a1e6-044fc582d436
+spec:
+  selector:
+    matchLabels:
+      app: iwiick-container-v1-0-0
+  template:
+    metadata:
+      labels:
+        app: iwiick-container-v1-0-0
