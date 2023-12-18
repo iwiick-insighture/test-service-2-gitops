@@ -15,7 +15,13 @@ spec:
       memoryLimitMb: 450
       args: []
       command: []
-      configMounts: []
+      configMounts:
+        - configMapName: sss
+          isEnv: false
+          isFile: true
+          key: ssss
+          mountPath: /path
+          secretName: ''
       applicationPorts: []
       healthChecks: []
       name: demo-app-1-main
