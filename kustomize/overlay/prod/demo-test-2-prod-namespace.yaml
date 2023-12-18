@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: demo-test-2-prod
+  labels:
+    environment-id: env_24bba705-722d-46ac-a4ea-c34b3e9d622a
+    project-id: project_bcfe9352-cf38-4392-b8e5-907caeec00db
+    project-name: demo-test-2
+    environment-name: prod
+    organization-id: org_fc18b32c-00a4-49d7-94ab-ee96b2c9569d
