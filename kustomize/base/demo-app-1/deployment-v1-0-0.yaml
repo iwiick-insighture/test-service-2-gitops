@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-app-1-v1-0-0
+  labels:
+    app: demo-app-1-v1-0-0
+    applicationId: app_38278858-7d4a-47e6-a27b-4087d4bf7e4c
+    version: v1.0.0
+    organizationId: org_fc18b32c-00a4-49d7-94ab-ee96b2c9569d
+    projectId: project_bcfe9352-cf38-4392-b8e5-907caeec00db
+spec:
+  selector:
+    matchLabels:
+      app: demo-app-1-v1-0-0
+  template:
+    metadata:
+      labels:
+        app: demo-app-1-v1-0-0

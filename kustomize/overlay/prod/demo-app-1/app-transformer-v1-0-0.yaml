@@ -1,0 +1,46 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: demo-app-1-main
+      imagePullPolicy: Always
+      imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com/iwiick-demo-1
+      credentialId: credential_d41fad63-6f98-424b-ac8b-759e564aed75
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: demo-app-1
+    version: v1.0.0
+    applicationId: app_38278858-7d4a-47e6-a27b-4087d4bf7e4c
+    projectId: project_bcfe9352-cf38-4392-b8e5-907caeec00db
+    organizationId: org_fc18b32c-00a4-49d7-94ab-ee96b2c9569d
+    environmentId: env_24bba705-722d-46ac-a4ea-c34b3e9d622a
+    environmentName: prod
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: demo-app-1
+  cronTab: ''
+  serviceType: ClusterIP
+  version: v1.0.0
+  namespace: demo-test-2-prod
