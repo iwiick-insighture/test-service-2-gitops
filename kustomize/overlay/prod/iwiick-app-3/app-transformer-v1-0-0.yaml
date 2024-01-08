@@ -1,0 +1,46 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: iwiick-app-3-main
+      imagePullPolicy: Always
+      imageRegistry: ghcr.io/iwiick-insighture/iwiick
+      imagePullSecretName: imagepull-github
+      credentialId: credential_c38a1871-96b5-430f-822a-143f05ae0b83
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: iwiick-app-3
+    version: v1.0.0
+    applicationId: app_fd49ab28-f155-4dd4-a3dd-725d2bdf3803
+    projectId: project_88e61e3d-8f14-4fe8-b600-517e8138c28d
+    organizationId: org_9f875a32-727f-4fb0-aeb6-ad3b32168642
+    environmentId: env_883efa96-1e5b-49f6-bddc-0b80d9e4fa93
+    environmentName: prod
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: iwiick-app-3
+  serviceType: ClusterIP
+  version: v1.0.0
+  namespace: iwiick-proj-1-prod
