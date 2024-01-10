@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: latest
+    - imageTag: 035de7a9b7bad7c7fc6f6e780accb338c2e20456
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -23,6 +23,14 @@ spec:
       imageRegistry: ghcr.io/iwiick-insighture/iwiick
       imagePullSecretName: imagepull-github
       credentialId: credential_c38a1871-96b5-430f-822a-143f05ae0b83
+      commitDetails:
+        commitHash: 035de7a9b7bad7c7fc6f6e780accb338c2e20456
+        commitAvatar: https://github.com/skyu-v2-dev[bot].png
+        commitTime: '2024-01-10T10:59:53Z'
+        commitMessage: >-
+          "container-prod_env_883efa96-1e5b-49f6-bddc-0b80d9e4fa93_app_af24ca9b-3f36-4036-914b-c78232ad5d16
+          workflow file created'"
+        commitUser: skyu-v2-dev[bot]
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
