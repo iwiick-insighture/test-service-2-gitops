@@ -1,0 +1,46 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: ridmi-app-main
+      imagePullPolicy: Always
+      imageRegistry: ghcr.io/Ridmi-INS/hello
+      imagePullSecretName: imagepull-github
+      credentialId: credential_1b8c3969-f00c-4593-8ab1-443b7051b2a1
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: ridmi-app
+    version: v1.0.0
+    applicationId: app_22c5e8b1-c49e-4129-bc98-3103b7e45af2
+    projectId: project_88e61e3d-8f14-4fe8-b600-517e8138c28d
+    organizationId: org_9f875a32-727f-4fb0-aeb6-ad3b32168642
+    environmentId: env_2046883c-f8a3-4774-ae10-510d8ab9865a
+    environmentName: dev
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: ridmi-app
+  serviceType: ClusterIP
+  version: v1.0.0
+  namespace: iwiick-proj-1-dev

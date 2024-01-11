@@ -13,4 +13,4 @@ spec:
     organizationId: org_9f875a32-727f-4fb0-aeb6-ad3b32168642
     projectId: project_88e61e3d-8f14-4fe8-b600-517e8138c28d
   provider: github
-  secretRef: dcf511aa-3fcc-4f49-ad7a-e8be15cfcfe3
+  secretRef: c31a2503-5cab-45d3-b67c-b2a2251943ce
