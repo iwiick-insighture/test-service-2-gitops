@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: 2b63081b9188fedd97b8da22f0c3ee49a7507eae
+    - imageTag: 2b77afb8ab35baad97b56def421e14d9d68140f7
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -24,13 +24,11 @@ spec:
       imagePullSecretName: imagepull-github
       credentialId: credential_c38a1871-96b5-430f-822a-143f05ae0b83
       commitDetails:
-        commitHash: 2b63081b9188fedd97b8da22f0c3ee49a7507eae
-        commitAvatar: https://github.com/skyu-v2-dev[bot].png
-        commitTime: '2024-01-10T10:59:54Z'
-        commitMessage: >-
-          "container-staging_env_e95341f3-31bf-4ccf-b669-bf1aa5389cb3_app_af24ca9b-3f36-4036-914b-c78232ad5d16
-          workflow file created'"
-        commitUser: skyu-v2-dev[bot]
+        commitHash: 2b77afb8ab35baad97b56def421e14d9d68140f7
+        commitAvatar: https://github.com/iwiick.png
+        commitTime: 2024-01-11T12:15:01 05:30
+        commitMessage: '"Update README.md"'
+        commitUser: iwiick
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
