@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: a22bc71504f9291368a5717b255e1ea2d30257b1
+    - imageTag: 6a60da6e803a729574f2c248d3c5c5b8c9637945
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -24,9 +24,9 @@ spec:
       imagePullSecretName: imagepull-github
       credentialId: credential_c38a1871-96b5-430f-822a-143f05ae0b83
       commitDetails:
-        commitHash: a22bc71504f9291368a5717b255e1ea2d30257b1
+        commitHash: 6a60da6e803a729574f2c248d3c5c5b8c9637945
         commitAvatar: https://github.com/skyu-v2-dev[bot].png
-        commitTime: '2024-01-12T07:48:17Z'
+        commitTime: '2024-01-12T07:55:26Z'
         commitMessage: >-
           "container-dev_env_2046883c-f8a3-4774-ae10-510d8ab9865a_app_91eb6f12-25e2-41b6-9613-6b2cd45a67fe
           workflow file created'"
