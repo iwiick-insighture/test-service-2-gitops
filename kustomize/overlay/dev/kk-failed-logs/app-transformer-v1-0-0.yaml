@@ -1,0 +1,46 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: kk-failed-logs-main
+      imagePullPolicy: Always
+      imageRegistry: ghcr.io/iwiick-insighture/iwiick
+      imagePullSecretName: imagepull-github
+      credentialId: credential_c38a1871-96b5-430f-822a-143f05ae0b83
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: kk-failed-logs
+    version: v1.0.0
+    applicationId: app_55f1fdf2-42d1-4cb2-bccd-5c7df997e7e2
+    projectId: project_88e61e3d-8f14-4fe8-b600-517e8138c28d
+    organizationId: org_9f875a32-727f-4fb0-aeb6-ad3b32168642
+    environmentId: env_2046883c-f8a3-4774-ae10-510d8ab9865a
+    environmentName: dev
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: kk-failed-logs
+  serviceType: ClusterIP
+  version: v1.0.0
+  namespace: iwiick-proj-1-dev

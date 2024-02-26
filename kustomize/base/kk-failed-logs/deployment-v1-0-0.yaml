@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kk-failed-logs-v1-0-0
+  labels:
+    app: kk-failed-logs-v1-0-0
+    applicationId: app_55f1fdf2-42d1-4cb2-bccd-5c7df997e7e2
+    version: v1.0.0
+    organizationId: org_9f875a32-727f-4fb0-aeb6-ad3b32168642
+    projectId: project_88e61e3d-8f14-4fe8-b600-517e8138c28d
+spec:
+  selector:
+    matchLabels:
+      app: kk-failed-logs-v1-0-0
+  template:
+    metadata:
+      labels:
+        app: kk-failed-logs-v1-0-0
+        applicationId: app_55f1fdf2-42d1-4cb2-bccd-5c7df997e7e2
+        version: v1.0.0
+        organizationId: org_9f875a32-727f-4fb0-aeb6-ad3b32168642
+        projectId: project_88e61e3d-8f14-4fe8-b600-517e8138c28d
