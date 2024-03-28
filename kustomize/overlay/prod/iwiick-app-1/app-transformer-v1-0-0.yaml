@@ -20,9 +20,8 @@ spec:
       healthChecks: []
       name: iwiick-app-1-main
       imagePullPolicy: Always
-      imageRegistry: ghcr.io/iwiick-insighture/iwiick
-      imagePullSecretName: imagepull-github
-      credentialId: credential_c38a1871-96b5-430f-822a-143f05ae0b83
+      imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com/iwiick-app-1
+      credentialId: credential_cb6badd6-85e3-4051-b3e1-2c578fb1afb9
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
@@ -32,10 +31,10 @@ spec:
   labels:
     app: iwiick-app-1
     version: v1.0.0
-    applicationId: app_91eb6f12-25e2-41b6-9613-6b2cd45a67fe
-    projectId: project_88e61e3d-8f14-4fe8-b600-517e8138c28d
-    organizationId: org_9f875a32-727f-4fb0-aeb6-ad3b32168642
-    environmentId: env_883efa96-1e5b-49f6-bddc-0b80d9e4fa93
+    applicationId: app_62d0974a-7ea9-4419-bd82-9e4eb8a20642
+    projectId: project_4400a997-b5f4-4bff-b1a7-8781f97ed034
+    organizationId: org_66955b30-1a63-4c92-bd87-67a900920d99
+    environmentId: env_2f520dfb-e112-4f4d-bcf6-4585a69ba6bd
     environmentName: prod
   horizontalAutoScalingRules: []
   volumes: []
@@ -43,4 +42,4 @@ spec:
   name: iwiick-app-1
   serviceType: ClusterIP
   version: v1.0.0
-  namespace: iwiick-proj-1-prod
+  namespace: iwiick-proj-3-prod
