@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: iwiick-proj-3-prod
+  labels:
+    environmentId: env_2f520dfb-e112-4f4d-bcf6-4585a69ba6bd
+    projectId: project_4400a997-b5f4-4bff-b1a7-8781f97ed034
+    projectName: iwiick-proj-3
+    environmentName: prod
+    organizationId: org_66955b30-1a63-4c92-bd87-67a900920d99
