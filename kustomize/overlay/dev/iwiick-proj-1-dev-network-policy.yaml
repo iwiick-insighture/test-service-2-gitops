@@ -4,9 +4,9 @@ metadata:
   name: allow-egress-and-limited-ingress
   namespace: iwiick-proj-1-dev
   labels:
-    organizationId: org_c3ee32e5-1a4f-4580-bb9f-9c113831aac2
-    projectId: project_286d6538-6b3b-4615-bd43-c7c3b4d768ea
-    environmentId: env_d3da4ee5-adcf-4788-addb-3ea337cf044f
+    organizationId: org_d2ea4601-f582-4e43-921d-6a60eea704b3
+    projectId: project_f25ad2e4-cf21-410c-b7fb-a8adad864a23
+    environmentId: env_3f34e2e8-6902-4eee-a0bb-281989189458
 spec:
   podSelector: {}
   egress:
@@ -18,7 +18,7 @@ spec:
     - from:
         - namespaceSelector:
             matchLabels:
-              environmentId: env_d3da4ee5-adcf-4788-addb-3ea337cf044f
+              environmentId: env_3f34e2e8-6902-4eee-a0bb-281989189458
     - from:
         - namespaceSelector:
             matchLabels:
