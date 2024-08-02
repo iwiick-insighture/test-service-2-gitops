@@ -8,6 +8,7 @@ metadata:
     version: v1.0.0
     organizationId: org_c3ee32e5-1a4f-4580-bb9f-9c113831aac2
     projectId: project_286d6538-6b3b-4615-bd43-c7c3b4d768ea
+    environmentId: env_d3da4ee5-adcf-4788-addb-3ea337cf044f
   annotations:
     reloader.stakater.com/auto: 'true'
 spec:
@@ -22,3 +23,4 @@ spec:
         version: v1.0.0
         organizationId: org_c3ee32e5-1a4f-4580-bb9f-9c113831aac2
         projectId: project_286d6538-6b3b-4615-bd43-c7c3b4d768ea
+        environmentId: env_d3da4ee5-adcf-4788-addb-3ea337cf044f

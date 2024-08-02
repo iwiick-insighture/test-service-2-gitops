@@ -21,7 +21,7 @@ spec:
       name: iwiick-app-1-main
       imagePullPolicy: Always
       imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com/iwiick-app-1
-      credentialId: credential_cb6badd6-85e3-4051-b3e1-2c578fb1afb9
+      credentialId: credential_f817e2f3-22b4-4595-9390-1f710dc95677
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
@@ -31,10 +31,10 @@ spec:
   labels:
     app: iwiick-app-1
     version: v1.0.0
-    applicationId: app_62d0974a-7ea9-4419-bd82-9e4eb8a20642
-    projectId: project_4400a997-b5f4-4bff-b1a7-8781f97ed034
-    organizationId: org_66955b30-1a63-4c92-bd87-67a900920d99
-    environmentId: env_b4619a15-8cc9-4a2f-888b-4ed1db0d4909
+    applicationId: app_9cb075a4-8a21-4d57-955b-66815e061f1f
+    projectId: project_286d6538-6b3b-4615-bd43-c7c3b4d768ea
+    organizationId: org_c3ee32e5-1a4f-4580-bb9f-9c113831aac2
+    environmentId: env_cae6e043-e5a7-476c-8ab1-52b6e74faa11
     environmentName: staging
   horizontalAutoScalingRules: []
   volumes: []
@@ -42,4 +42,4 @@ spec:
   name: iwiick-app-1
   serviceType: ClusterIP
   version: v1.0.0
-  namespace: iwiick-proj-3-staging
+  namespace: iwiick-proj-1-staging
