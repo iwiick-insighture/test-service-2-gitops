@@ -3,8 +3,8 @@ kind: Namespace
 metadata:
   name: iwiick-proj-1-staging
   labels:
-    environment-id: env_e95341f3-31bf-4ccf-b669-bf1aa5389cb3
-    project-id: project_88e61e3d-8f14-4fe8-b600-517e8138c28d
-    project-name: iwiick-proj-1
-    environment-name: staging
-    organization-id: org_9f875a32-727f-4fb0-aeb6-ad3b32168642
+    environmentId: env_cae6e043-e5a7-476c-8ab1-52b6e74faa11
+    projectId: project_286d6538-6b3b-4615-bd43-c7c3b4d768ea
+    projectName: iwiick-proj-1
+    environmentName: staging
+    organizationId: org_c3ee32e5-1a4f-4580-bb9f-9c113831aac2

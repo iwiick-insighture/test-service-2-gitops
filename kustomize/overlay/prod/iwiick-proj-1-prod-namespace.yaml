@@ -3,8 +3,8 @@ kind: Namespace
 metadata:
   name: iwiick-proj-1-prod
   labels:
-    environment-id: env_883efa96-1e5b-49f6-bddc-0b80d9e4fa93
-    project-id: project_88e61e3d-8f14-4fe8-b600-517e8138c28d
-    project-name: iwiick-proj-1
-    environment-name: prod
-    organization-id: org_9f875a32-727f-4fb0-aeb6-ad3b32168642
+    environmentId: env_d6320c2c-d8ce-4d17-b878-4590b7201cc0
+    projectId: project_286d6538-6b3b-4615-bd43-c7c3b4d768ea
+    projectName: iwiick-proj-1
+    environmentName: prod
+    organizationId: org_c3ee32e5-1a4f-4580-bb9f-9c113831aac2
