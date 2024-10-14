@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: iwiick-only-dev
+  labels:
+    environmentId: env_afb1d662-7bd4-43d5-9bb8-fba962deaa3b
+    projectId: project_77fc5bdd-b9e4-4d41-be85-7f146071fef4
+    projectName: iwiick-only
+    environmentName: dev
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
