@@ -21,7 +21,7 @@ spec:
       name: iwiick-app-1-main
       imagePullPolicy: Always
       imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com/iwiick-app-1
-      credentialId: credential_b0eb8c53-d256-4ff4-a2ad-00b531844942
+      credentialId: credential_94c8f187-0a1a-4f1d-93f9-e8bb10f14377
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
@@ -31,10 +31,10 @@ spec:
   labels:
     app: iwiick-app-1
     version: v1.0.0
-    applicationId: app_9f0d0e53-61bd-4717-a3b3-63c89b6e97ec
-    projectId: project_f25ad2e4-cf21-410c-b7fb-a8adad864a23
-    organizationId: org_d2ea4601-f582-4e43-921d-6a60eea704b3
-    environmentId: env_fad2a24f-7b73-4db2-9aab-09d857740d50
+    applicationId: app_d08e17b2-513a-4548-a883-1813652e0192
+    projectId: project_33d6eb31-f21a-4bbe-b322-75295d837ed8
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    environmentId: env_ebe32f30-bb97-49c1-a273-69ecea6c203b
     environmentName: prod
   horizontalAutoScalingRules: []
   volumes: []
@@ -42,4 +42,4 @@ spec:
   name: iwiick-app-1
   serviceType: ClusterIP
   version: v1.0.0
-  namespace: iwiick-proj-1-prod
+  namespace: iwiick-prod

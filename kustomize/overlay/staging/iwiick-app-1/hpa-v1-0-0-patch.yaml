@@ -5,11 +5,11 @@ metadata:
   name: iwiick-app-1-v1-0-0
   labels:
     app: iwiick-app-1-v1-0-0
-    applicationId: app_9f0d0e53-61bd-4717-a3b3-63c89b6e97ec
+    applicationId: app_d08e17b2-513a-4548-a883-1813652e0192
     version: v1.0.0
-    organizationId: org_d2ea4601-f582-4e43-921d-6a60eea704b3
-    projectId: project_f25ad2e4-cf21-410c-b7fb-a8adad864a23
-    environmentId: env_11c7ddba-3fc5-42b4-92b2-2424c944eede
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_33d6eb31-f21a-4bbe-b322-75295d837ed8
+    environmentId: env_17cd2821-4820-4f49-bfd4-036afb45a8d2
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
