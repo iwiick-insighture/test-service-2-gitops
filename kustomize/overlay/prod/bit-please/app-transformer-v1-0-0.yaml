@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: latest
+    - imageTag: b4fbed681783c22f6c61fad9bfc61fb9d2737d45
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -22,6 +22,12 @@ spec:
       imagePullPolicy: Always
       imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com/bit-please
       credentialId: credential_b0eb8c53-d256-4ff4-a2ad-00b531844942
+      commitDetails:
+        commitHash: b4fbed681783c22f6c61fad9bfc61fb9d2737d45
+        commitTime: ''
+        commitUser: ''
+        commitAvatar: https://github.com/.png
+        commitMessage: Deploy bit-please to dev
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
