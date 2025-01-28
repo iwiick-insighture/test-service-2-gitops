@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: custom-templates-staging
+  labels:
+    environmentId: env_8383085e-00a1-4308-a5ff-d577ec1c1102
+    projectId: project_65b1f990-30d5-441e-9629-aee42c623c48
+    projectName: custom-templates
+    environmentName: staging
+    organizationId: org_5bdc6e05-06b5-4d67-91b9-f020de5fdd93
