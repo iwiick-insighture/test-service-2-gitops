@@ -25,10 +25,10 @@ spec:
       credentialId: credential_2774fb83-54ac-40fb-ade5-dbf25ae4c5da
       commitDetails:
         commitHash: b3b87a1e625b628994303206feb61afd39e26caa
-        commitAvatar: https://github.com/.png
         commitTime: ''
-        commitMessage: ''
         commitUser: ''
+        commitAvatar: https://github.com/.png
+        commitMessage: msg_pr-default-staging_app_d550f9d.yaml Created
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
