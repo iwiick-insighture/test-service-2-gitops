@@ -1,0 +1,46 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: msg-main
+      imagePullPolicy: Always
+      imageRegistry: docker.io/thameeragg/msg
+      imagePullSecretName: imagepull-docker
+      credentialId: credential_2774fb83-54ac-40fb-ade5-dbf25ae4c5da
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: msg
+    version: v1.0.0
+    applicationId: app_d550f9d0-76cd-4c94-be2c-da7afbdb6f33
+    projectId: project_f25ad2e4-cf21-410c-b7fb-a8adad864a23
+    organizationId: org_d2ea4601-f582-4e43-921d-6a60eea704b3
+    environmentId: env_fad2a24f-7b73-4db2-9aab-09d857740d50
+    environmentName: prod
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: msg
+  serviceType: ClusterIP
+  version: v1.0.0
+  namespace: iwiick-proj-1-prod
