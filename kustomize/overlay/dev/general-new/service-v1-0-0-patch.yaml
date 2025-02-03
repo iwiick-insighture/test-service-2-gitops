@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    app: general-new-v1-0-0
+    applicationId: app_eba6d026-bfaa-4ab6-91fd-a1183397a53f
+    version: v1.0.0
+    organizationId: org_d2ea4601-f582-4e43-921d-6a60eea704b3
+    projectId: project_f25ad2e4-cf21-410c-b7fb-a8adad864a23
+    environmentId: env_3f34e2e8-6902-4eee-a0bb-281989189458
+  name: general-new-v1-0-0
+spec:
+  selector:
+    app: general-new-v1-0-0
