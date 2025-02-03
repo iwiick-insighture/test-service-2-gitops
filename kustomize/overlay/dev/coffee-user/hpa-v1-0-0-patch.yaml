@@ -1,0 +1,17 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  annotations: {}
+  name: coffee-user-v1-0-0
+  labels:
+    app: coffee-user-v1-0-0
+    applicationId: app_44260cd3-7525-47cf-9796-30e714b11d56
+    version: v1.0.0
+    organizationId: org_5bdc6e05-06b5-4d67-91b9-f020de5fdd93
+    projectId: project_a76ac38c-01c7-409e-b6f4-432611deb5fb
+    environmentId: env_d4c2b703-bedf-49fa-b300-316f163aff0c
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: coffee-user-v1-0-0

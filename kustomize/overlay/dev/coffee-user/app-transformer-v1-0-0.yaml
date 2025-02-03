@@ -1,0 +1,45 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: coffee-user-main
+      imagePullPolicy: Always
+      imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com/coffee-user
+      credentialId: credential_aa0b42d5-5468-4ba6-8576-169da15f9f18
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: coffee-user
+    version: v1.0.0
+    applicationId: app_44260cd3-7525-47cf-9796-30e714b11d56
+    projectId: project_a76ac38c-01c7-409e-b6f4-432611deb5fb
+    organizationId: org_5bdc6e05-06b5-4d67-91b9-f020de5fdd93
+    environmentId: env_d4c2b703-bedf-49fa-b300-316f163aff0c
+    environmentName: dev
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: coffee-user
+  serviceType: ClusterIP
+  version: v1.0.0
+  namespace: bean-and-brew-dev

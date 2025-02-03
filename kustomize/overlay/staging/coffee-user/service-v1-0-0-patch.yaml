@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    app: coffee-user-v1-0-0
+    applicationId: app_44260cd3-7525-47cf-9796-30e714b11d56
+    version: v1.0.0
+    organizationId: org_5bdc6e05-06b5-4d67-91b9-f020de5fdd93
+    projectId: project_a76ac38c-01c7-409e-b6f4-432611deb5fb
+    environmentId: env_f3bc5278-0a45-4140-8082-729c836e5e6e
+  name: coffee-user-v1-0-0
+spec:
+  selector:
+    app: coffee-user-v1-0-0
