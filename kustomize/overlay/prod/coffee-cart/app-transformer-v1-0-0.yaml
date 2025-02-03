@@ -1,0 +1,45 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: coffee-cart-main
+      imagePullPolicy: Always
+      imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com/coffee-cart
+      credentialId: credential_aa0b42d5-5468-4ba6-8576-169da15f9f18
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: coffee-cart
+    version: v1.0.0
+    applicationId: app_6c1ef079-5388-4669-b6f1-93362f29ea22
+    projectId: project_a76ac38c-01c7-409e-b6f4-432611deb5fb
+    organizationId: org_5bdc6e05-06b5-4d67-91b9-f020de5fdd93
+    environmentId: env_17f5305d-6f79-43bf-9ab5-e29d700d8210
+    environmentName: prod
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: coffee-cart
+  serviceType: ClusterIP
+  version: v1.0.0
+  namespace: bean-and-brew-prod
