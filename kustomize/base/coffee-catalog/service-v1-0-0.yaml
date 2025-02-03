@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    app: coffee-catalog-v1-0-0
+    applicationId: app_54cc4a5e-7964-416e-91c5-27b50d327e67
+    version: v1.0.0
+    organizationId: org_5bdc6e05-06b5-4d67-91b9-f020de5fdd93
+    projectId: project_a76ac38c-01c7-409e-b6f4-432611deb5fb
+  name: coffee-catalog-v1-0-0
+spec:
+  selector:
+    app: coffee-catalog-v1-0-0
