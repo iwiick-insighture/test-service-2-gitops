@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    app: coffee-order-v1-0-0
+    applicationId: app_9a3ba3fb-ffb5-4f75-985c-243de3a598cb
+    version: v1.0.0
+    organizationId: org_5bdc6e05-06b5-4d67-91b9-f020de5fdd93
+    projectId: project_a76ac38c-01c7-409e-b6f4-432611deb5fb
+    environmentId: env_d4c2b703-bedf-49fa-b300-316f163aff0c
+  name: coffee-order-v1-0-0
+spec:
+  selector:
+    app: coffee-order-v1-0-0
