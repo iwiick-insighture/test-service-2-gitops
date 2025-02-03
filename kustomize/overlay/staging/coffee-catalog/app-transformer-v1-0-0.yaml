@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: latest
+    - imageTag: 72c8007fcb2e8f7efbcccffd355e2c961200e2df
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -22,6 +22,12 @@ spec:
       imagePullPolicy: Always
       imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com/coffee-catalog
       credentialId: credential_aa0b42d5-5468-4ba6-8576-169da15f9f18
+      commitDetails:
+        commitHash: 72c8007fcb2e8f7efbcccffd355e2c961200e2df
+        commitTime: ''
+        commitUser: ''
+        commitAvatar: https://github.com/.png
+        commitMessage: coffee-catalog_pr-default-prod_app_54cc4a5.yaml Created
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
