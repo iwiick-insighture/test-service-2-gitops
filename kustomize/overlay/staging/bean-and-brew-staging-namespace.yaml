@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: bean-and-brew-staging
+  labels:
+    environmentId: env_f3bc5278-0a45-4140-8082-729c836e5e6e
+    projectId: project_a76ac38c-01c7-409e-b6f4-432611deb5fb
+    projectName: bean-and-brew
+    environmentName: staging
+    organizationId: org_5bdc6e05-06b5-4d67-91b9-f020de5fdd93

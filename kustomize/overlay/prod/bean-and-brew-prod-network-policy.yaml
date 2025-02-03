@@ -1,0 +1,33 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-egress-and-limited-ingress
+  namespace: bean-and-brew-prod
+  labels:
+    organizationId: org_5bdc6e05-06b5-4d67-91b9-f020de5fdd93
+    projectId: project_a76ac38c-01c7-409e-b6f4-432611deb5fb
+    environmentId: env_17f5305d-6f79-43bf-9ab5-e29d700d8210
+spec:
+  podSelector: {}
+  egress:
+    - {}
+  policyTypes:
+    - Egress
+    - Ingress
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              environmentId: env_17f5305d-6f79-43bf-9ab5-e29d700d8210
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              kubernetes.io/metadata.name: skyu-system
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              role: ingress
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              role: observability
