@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: latest
+    - imageTag: 29babc3ae90d01f82211b34063a7834591e9caea
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -23,6 +23,12 @@ spec:
       imageRegistry: docker.io/thameeragg/general-new
       imagePullSecretName: imagepull-docker
       credentialId: credential_2774fb83-54ac-40fb-ade5-dbf25ae4c5da
+      commitDetails:
+        commitHash: 29babc3ae90d01f82211b34063a7834591e9caea
+        commitAvatar: https://github.com/.png
+        commitTime: ''
+        commitMessage: ''
+        commitUser: ''
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
