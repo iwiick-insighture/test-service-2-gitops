@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: latest
+    - imageTag: 9a8b9f000877be779bce747ee67a0b052287de56
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -22,6 +22,12 @@ spec:
       imagePullPolicy: Always
       imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com/coffee-cart
       credentialId: credential_aa0b42d5-5468-4ba6-8576-169da15f9f18
+      commitDetails:
+        commitHash: 9a8b9f000877be779bce747ee67a0b052287de56
+        commitTime: ''
+        commitUser: ''
+        commitAvatar: https://github.com/.png
+        commitMessage: coffee-cart_container-prod_app_6c1ef07_env_17f5305.yaml Updated
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
