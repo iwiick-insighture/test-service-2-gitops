@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: 604df976ce8b65ae5fb909c206e5c207d795f216
+    - imageTag: 2db162b576490410683bd5a3c7c31ab772a307ab
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -23,7 +23,7 @@ spec:
       imageRegistry: 272133924862.dkr.ecr.us-east-1.amazonaws.com/iwiick
       credentialId: credential_94c8f187-0a1a-4f1d-93f9-e8bb10f14377
       commitDetails:
-        commitHash: 604df976ce8b65ae5fb909c206e5c207d795f216
+        commitHash: 2db162b576490410683bd5a3c7c31ab772a307ab
         commitAvatar: https://github.com/.png
         commitTime: ''
         commitMessage: ''
