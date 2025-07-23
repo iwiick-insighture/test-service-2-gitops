@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: custom-templates-2-staging
+  labels:
+    environmentId: env_3a673918-236d-497a-b6d9-3eb5ab7f5ed2
+    projectId: project_79b54f97-5851-42fe-ba86-c5428a8df10d
+    projectName: custom-templates-2
+    environmentName: staging
+    organizationId: org_5bdc6e05-06b5-4d67-91b9-f020de5fdd93
+    goldilocks.fairwinds.com/enabled: 'true'
